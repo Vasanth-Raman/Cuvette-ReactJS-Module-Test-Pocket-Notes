@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0; /*check later*/
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+  --Bg-Theme: #dae5f5;
+  --dark-blue: #001f8b;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: var(--dark-blue);
+}
+
+button:active {
+  scale: 0.9;
+  opacity: 0.8;
+}
+
+/* mobile responsiveness */
+
+@media screen and (max-width: 767px) {
+  .remove {
+    display: none;
+  }
+}

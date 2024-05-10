@@ -1,0 +1,16 @@
+.pageContainer {
+  display: flex;
+  width: 100vw;
+  height: 100svh;
+}
+
+.pageContainer .createGroupModal {
+  width: 100vw;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  background-color: #2f2f2fbf;
+}

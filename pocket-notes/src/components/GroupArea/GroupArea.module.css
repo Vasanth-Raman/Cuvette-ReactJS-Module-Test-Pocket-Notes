@@ -1,0 +1,81 @@
+.groupZone {
+  background-color: #ffffff;
+  width: 25%;
+  height: 100%;
+  position: relative;
+}
+
+.groupZone .title {
+  height: 17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.groupZone .title span {
+  font-size: 2.1875rem;
+  font-weight: 500;
+}
+
+.groupZone .groupsBox {
+  overflow-y: auto;
+  max-height: 83%;
+}
+
+.groupZone .groupsBox > div {
+  padding-left: 1.5rem;
+}
+
+.groupZone .groupsBox > div:hover,
+.groupZone .groupsBox > div:active {
+  background-color: #6161611a;
+  border-radius: 1rem;
+}
+
+.groupZone .groupsBox > div a {
+  text-decoration: none;
+}
+
+.groupZone .addButton {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  font-size: 4rem;
+  font-weight: 500;
+  position: absolute;
+  right: 1.2rem;
+  bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.groupZone ::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.groupZone ::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 0.3rem;
+  background-color: #ffffff;
+  background-clip: content-box;
+}
+
+.groupZone ::-webkit-scrollbar-track {
+  border-radius: 0.3rem;
+  background-color: #d9d9d9;
+}
+
+@media screen and (max-width: 767px) {
+  .groupZone {
+    width: 100vw;
+  }
+  .groupZone .title {
+    height: 15%;
+  }
+
+  .groupZone .title span {
+    font-size: 1.7rem;
+  }
+  .groupZone .groupsBox {
+    max-height: 85%;
+  }
+}

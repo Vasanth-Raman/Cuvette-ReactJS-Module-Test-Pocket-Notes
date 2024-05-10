@@ -1,0 +1,28 @@
+.groupName {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.groupName .groupNameTrim {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .groupName {
+    font-size: 1.2rem;
+    gap: 1rem;
+  }
+  .groupName .groupNameTrim {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}

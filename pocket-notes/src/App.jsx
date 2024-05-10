@@ -1,9 +1,9 @@
-import React from "react"; // importing react
-import "./App.css"; //importing styles
-import { Routes, Route } from "react-router-dom"; // importing routes
-import HomePage from "./pages/HomePage"; // importing homepage
-import NotesPage from "./pages/NotesPage"; // importing notes page
-import { useWidth } from "./context/widthContext"; // for width and responsiveness
+//root app which passes homepage and notespage from pages
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import NotesPage from "./pages/NotesPage";
+import { useWidth } from "./context/WidthContext";
 
 function App() {
   const screenWidth = useWidth();

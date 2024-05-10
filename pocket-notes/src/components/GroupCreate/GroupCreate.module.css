@@ -1,0 +1,124 @@
+.createGroup {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  width: 50rem;
+  min-height: 19.8125rem;
+  border-radius: 0.375rem;
+  padding: 0 2%;
+  padding-right: 1%;
+  font-weight: 500;
+}
+
+.createGroup h3 {
+  font-size: 1.8125rem;
+  margin: 0;
+}
+
+.createGroup .input {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  height: 2rem;
+  position: relative;
+}
+
+.createGroup .input label {
+  font-size: 1.7069rem;
+  font-weight: 500;
+}
+
+.createGroup .input input {
+  width: 60%;
+  height: 90%;
+  border-radius: 1.375rem;
+  border: 2px solid #cccccc;
+  padding-left: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #ffffff;
+}
+
+.createGroup .input input::placeholder {
+  color: #979797;
+  font-weight: 400;
+}
+
+.createGroup .input .error {
+  color: #ff0000;
+  position: absolute;
+  bottom: -1.8rem;
+  right: 40%;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.createGroup .input .coloursSet {
+  display: flex;
+  gap: 1rem;
+}
+
+.createGroup .input .coloursSet .picked {
+  border: 0.1563rem solid #000000;
+}
+
+.createGroup .input .coloursSet div {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.createGroup .createButton {
+  width: 30%;
+  height: 2.375rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  border-radius: 0.7rem;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+  .createGroup {
+    width: 85%;
+    min-height: 35%;
+  }
+  .createGroup h3 {
+    font-size: 1.15rem;
+    margin: 0;
+  }
+  .createGroup .input {
+    gap: 0.5rem;
+  }
+  .createGroup .input label {
+    font-size: 0.8rem;
+  }
+  .createGroup .input input {
+    width: 55%;
+    height: 65%;
+  }
+  .createGroup .input input::placeholder {
+    font-size: 0.8rem;
+  }
+  .createGroup .input .error {
+    bottom: -1rem;
+    right: 25%;
+    font-size: 0.8rem;
+  }
+  .createGroup .input .coloursSet {
+    gap: 0.3rem;
+  }
+  .createGroup .input .coloursSet div {
+    width: 1.4rem;
+    height: 1.4rem;
+    box-sizing: border-box;
+  }
+  .createGroup .createButton {
+    align-self: center;
+    width: 65%;
+    height: 2rem;
+  }
+}

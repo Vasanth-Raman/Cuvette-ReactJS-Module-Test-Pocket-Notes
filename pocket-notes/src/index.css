@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  padding: 0; /*check later*/
+  padding: 0;
 }
 
 :root {
@@ -23,8 +23,6 @@ button:active {
   scale: 0.9;
   opacity: 0.8;
 }
-
-/* mobile responsiveness */
 
 @media screen and (max-width: 767px) {
   .remove {

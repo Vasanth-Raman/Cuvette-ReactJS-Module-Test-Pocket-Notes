@@ -1,0 +1,62 @@
+.notesZone {
+  flex: 1 1;
+  height: 100svh;
+  background-color: var(--Bg-Theme);
+  position: relative;
+}
+
+.notesZone .groupNameTab {
+  box-sizing: border-box;
+  background-color: var(--dark-blue);
+  width: 100%;
+  height: 11%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.notesZone .notesBox {
+  box-sizing: border-box;
+  overflow: auto;
+  height: 62%;
+  padding: 1rem 2rem 0;
+}
+
+.notesZone ::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.notesZone ::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 0.3rem;
+  background-color: #ffffff;
+  background-clip: content-box;
+}
+
+.notesZone ::-webkit-scrollbar-track {
+  border-radius: 0.3rem;
+  background-color: #000000a1;
+}
+
+.groupError {
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .notesZone .groupNameTab {
+    height: 10%;
+  }
+  .notesZone .notesBox {
+    height: 69%;
+    padding: 0.9rem;
+    padding-bottom: 0;
+  }
+  .groupError {
+    font-size: 1.2rem;
+  }
+}

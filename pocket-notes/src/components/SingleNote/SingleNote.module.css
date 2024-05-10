@@ -1,0 +1,36 @@
+.noteSlip {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 0.3125rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.8019rem;
+  margin-bottom: 1rem;
+  padding: 1.2rem 1rem 0.5rem;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.noteSlip p {
+  margin: 0;
+}
+
+.noteSlip .dateTime {
+  text-align: right;
+  font-weight: 500;
+  height: max-content;
+  margin-top: 0.5rem;
+}
+
+.noteSlip .dateTime span {
+  font-size: 1.5rem;
+  position: relative;
+  top: 3px;
+  color: #353535;
+}
+
+@media screen and (max-width: 767px) {
+  .noteSlip .dateTime {
+    font-size: 0.85rem;
+  }
+}
